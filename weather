@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int kontrol,hava;
+	printf("Kullanici evde mi ? (evet->1  hayir->0 )");
+	scanf("%d",&kontrol);
+	printf("Hava derecesi kac-> ");
+	scanf("%d",&hava);
+	if(kontrol==0)
+	{
+		printf("Ekonomik mod(kombi kapatildi.)\n");
+	}
+	if(kontrol==1 && hava<15)
+	{
+		printf("Konfor modu(kombi calisiyor.)\n");
+	}
+	if(kontrol==1 && hava>=15)
+	{
+		printf("Yaz modu(kombi beklemede.)");
+	}
+
+
+
+
+
+
+	return 0;
+}
